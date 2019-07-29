@@ -1,0 +1,109 @@
+{
+  "name": "eventcms",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:e2e": "vue-cli-service test:e2e"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "core-js": "^2.6.5",
+    "cssnano": "^4.1.10",
+    "element-ui": "^2.10.1",
+    "postcss-aspect-ratio-mini": "^1.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-px-to-viewport": "^1.1.1",
+    "postcss-url": "^8.0.0",
+    "postcss-viewport-units": "^0.1.6",
+    "postcss-write-svg": "^3.0.1",
+    "prerender-spa-plugin": "^3.4.0",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-property-decorator": "^8.1.0",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-plugin-e2e-cypress": "^3.9.0",
+    "@vue/cli-plugin-eslint": "^3.9.0",
+    "@vue/cli-plugin-pwa": "^3.9.0",
+    "@vue/cli-plugin-typescript": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/eslint-config-typescript": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "cssnano-preset-advanced": "^4.0.7",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "page-skeleton-webpack-plugin": "^0.10.12",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "typescript": "^3.4.3",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/prettier",
+      "@vue/typescript"
+    ],
+    "rules": {
+      "no-console": "off"
+    },
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {},
+      "postcss-import": {},
+      "postcss-url": {},
+      "postcss-aspect-ratio-mini": {},
+      "postcss-write-svg": {
+        "utf8": false
+      },
+      "postcss-px-to-viewport": {
+        "viewportWidth": 375,
+        "unitPrecision": 3,
+        "viewportUnit": "vw",
+        "selectorBlackList": [
+          ".ignore",
+          ".hairlines"
+        ],
+        "minPixelValue": 1,
+        "mediaQuery": false
+      },
+      "postcss-viewport-units": {
+        "silence": true
+      },
+      "cssnano": {
+        "preset": [
+          "advanced",
+          {
+            "autoprefixer": false,
+            "zindex": false
+          }
+        ]
+      }
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

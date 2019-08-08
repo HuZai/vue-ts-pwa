@@ -3,7 +3,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './registerServiceWorker'
+import './elementInit'
 import Component from 'vue-class-component'
+
 import http from './utils/http'
 Vue.config.productionTip = false
 Vue.prototype.$https = http
@@ -22,7 +24,7 @@ new Vue({
   router,
   store,
   render: h => h(App),
-  mounted () {
+  mounted() {
     document.dispatchEvent(new Event('render-event'))
   }
 }).$mount('#app')

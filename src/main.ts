@@ -9,7 +9,10 @@ import Component from 'vue-class-component'
 import http from './utils/http'
 Vue.config.productionTip = false
 Vue.prototype.$https = http
-
+var hacks = require('viewport-units-buggyfill/viewport-units-buggyfill.hacks');
+require('viewport-units-buggyfill').init({
+  hacks: hacks
+});
 router.beforeEach((to, from, next) => {
   console.log('router start')
   next()

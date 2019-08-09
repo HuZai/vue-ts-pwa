@@ -16,12 +16,14 @@
     "postcss-aspect-ratio-mini": "^1.0.1",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
     "postcss-px-to-viewport": "^1.1.1",
     "postcss-url": "^8.0.0",
     "postcss-viewport-units": "^0.1.6",
     "postcss-write-svg": "^3.0.1",
     "prerender-spa-plugin": "^3.4.0",
     "register-service-worker": "^1.6.2",
+    "viewport-units-buggyfill": "^0.6.2",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
     "vue-content-loader": "^0.2.2",
@@ -83,7 +85,7 @@
       },
       "postcss-px-to-viewport": {
         "viewportWidth": 375,
-        "unitPrecision": 3,
+        "unitPrecision": 5,
         "viewportUnit": "vw",
         "selectorBlackList": [
           ".ignore",

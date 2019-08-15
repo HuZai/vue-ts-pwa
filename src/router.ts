@@ -2,14 +2,15 @@ import Vue from 'vue'
 import Router from 'vue-router'
 Vue.use(Router)
 import About from './views/About.vue'
-import Home from './views/Home.vue'
 import Test from './views/Test.vue'
 import skeletons from './routers/skeleton/index'
+import preview from './routers/preview'
 export default new Router({
   mode: 'history',
-  base: '/seo/',
+  base: process.env.NODE_ENV === 'production' ? '/seo/' : '/',
   routes: [
     ...skeletons,
+    ...preview,
     {
       path: '/home',
       name: 'home',

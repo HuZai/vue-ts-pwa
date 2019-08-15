@@ -15,7 +15,7 @@
       ></el-col>
     </el-row>
     <el-row style="width: 100%;">
-      <img alt="Vue logo" src="../assets/logo.png" class="imgs" />
+      <img alt="Vue logo" src="../assets/logo.png" class="vw_" />
       <img alt="Vue logo" src="../assets/card1.png" class="imgs" />
     </el-row>
 
@@ -35,6 +35,8 @@
   width 100%
   overflow hidden
   z-index 10
+  .vw_
+    width 100px
   .imgs
     width 100px
 [w-375-100]

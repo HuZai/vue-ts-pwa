@@ -5,7 +5,7 @@ import store from './store'
 import './registerServiceWorker'
 import './elementInit'
 import Component from 'vue-class-component'
-
+// import './assets/css/global.css'
 import http from './utils/http'
 Vue.config.productionTip = false
 Vue.prototype.$https = http
